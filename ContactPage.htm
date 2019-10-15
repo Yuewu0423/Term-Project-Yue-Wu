@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ContactPage-SH</title>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <nav>
+            <a href="index.htm">Home</a>
+            <a href="Dining-Picks.htm">Dining Options</a>
+            <a href="Hotel-Picks.htm">Top Hotels</a>
+            <a href="Toursit-Attraction.htm">Top Tourist Attractions</a>
+            <a href="Night-Life.htm">Shanghai Night Life</a>
+            <a href="ContactPage.htm">Contact US</a>
+            <a href="Site-map.htm">Site Map</a>
+
+    <h3>Comments?</h3>
+    <table>
+        <form method="POST" action name="myForm">
+            <tr>
+                <td>
+                    Last Name: <input type="text" name="lastname" maxlength="35"
+                        placeholder="Enter your last name here">
+                </td>
+                <td>
+                    First Name: <input type="text" name="firstname" maxlength="35"
+                        placeholder="Enter your first name here">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email: <input type="text" name="email" maxlength="50" placeholder="Enter your email here">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:Male <input type="radio" name="gender" value="m">
+                    Female <input type="radio" name="gender" value="f">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="comments" rows="5" cols="50"
+                        placeholder="Please enter your comments here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+                <td>
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+
+        </form>
+    </table>
+    <br>
+    <br>
+    <h3>Shanghai Airports</h3>
+    <map name="Shanghai">
+        <area shape="rect" coords="500, 120, 520, 160" href="https://www.shairport.com/index_pdjc.html"
+        alt="PudongAirport" title="Pudongairport" target="_blank">
+        <area shape="rect" coords="160, 100, 200, 140" href="https://www.shairport.com/index_hqjc.html"
+        alt="HongqiaoAirport" title="Hongqiaoairport" target="_blank">
+
+    </map>
+    <img src="airportsmap.jpg" usemap="#Shanghai" alt="Airport Locations" title="AirportMap">
+
+</body>
+
+</html>

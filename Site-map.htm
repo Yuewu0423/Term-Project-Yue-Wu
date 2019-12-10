@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SiteMap-SH</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color:#cccccc;
+            margin-right: 500px;
+            margin-left: 500px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            font-family: italic;
+            padding: 10px 15px 10px 15px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            background-color: darkgrey;
+        }
+
+        p {
+            text-align: center;
+            font-size: medium;
+        }
+        body{
+            background-color: gainsboro;
+        }
+        #me{
+            font: bolder;
+            color:darkslategray;
+        }
+    </style>
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#sm").click(function () {
+                $("p").css("color","white")
+                $("p").css("background-color", "blue")
+            })
+
+        });
+    </script>
+
 </head>
+
 <body>
     <h1>Sitemap</h1>
     <nav>
-            <a href="index.htm">Home</a>
-            <a href="Dining-Picks.htm">Dining Options</a>
-            <a href="Hotel-Picks.htm">Top Hotels</a>
-            <a href="Toursit-Attraction.htm">Top Tourist Attractions</a>
-            <a href="Night-Life.htm">Shanghai Night Life</a>
-            <a href="ContactPage.htm">Contact US</a>
-            <a href="Site-map.htm">Site Map</a>
-    
-        </nav>
-        <div>
+        <a href="index.htm">Home</a>
+        <a href="Dining-Picks.htm">Dining Options</a>
+        <a href="Hotel-Picks.htm">Top Hotels</a>
+        <a href="Toursit-Attraction.htm">Top Tourist Attractions</a>
+        <a href="Night-Life.htm">Shanghai Night Life</a>
+        <a href="ContactPage.htm">Contact US</a>
+        <a href="Site-map.htm">Site Map</a>
+        <a href="Credits-Page.htm">Credits Page</a>
+
+    </nav>
+    <hr>
+    <div>
         <ul>
-                <li><a href="index.htm">Home Page</a></li>
-                <li><a href="Dining-Picks.htm">Dining Options</a></li>
-                <li><a href="Hotel-Picks.htm">Top Hotels</a></li>
-                <li><a href="Toursit-Attraction.htm">Top Tourist Attractions</a></li>
-                <li><a href="Night-Life.htm">Shanghai Night Life</a></li>
-                <li><a href="ContactPage.htm">Contact US</a></li>
+            <li><a href="index.htm">Home Page</a></li>
+            <li><a href="Dining-Picks.htm">Dining Options</a></li>
+            <li><a href="Hotel-Picks.htm">Top Hotels</a></li>
+            <li><a href="Toursit-Attraction.htm">Top Tourist Attractions</a></li>
+            <li><a href="Night-Life.htm">Shanghai Night Life</a></li>
+            <li><a href="ContactPage.htm">Contact US</a></li>
+            <li><a href="Credits-Page.htm">Credits Page</a></li>
         </ul>
-        </div>
-   
-           
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <p>I, Yue Wu, pledge my honor that I have neither received nor provided unauthorized assistance during the
+        completion of this work.<br>
+        I have read the term project instructions and observed all the restrictions and limitations specified therein.
+    </p>
+    <img id="sm" src="smiley.gif" height="40" alt="smile-face" title="smile-face">
+    <div id="me">Click Me!</div>
+
+
 
 </body>
+
 </html>

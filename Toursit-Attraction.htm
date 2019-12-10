@@ -1,23 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Shanghai, Travel, Tourist Attraction">
+    <meta name="description" content="Shanghai Travel Guide-Tourist Attraction">
+    <meta name="author" content="Yue Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ToursitAttraction-SH</title>
-</head>
-<body>
-        <h1>Top Toursit Attractions In Shanghai</h1>
-        <nav>
-                <a href="index.htm">Home</a>
-                <a href="Dining-Picks.htm">Dining Options</a>
-                <a href="Hotel-Picks.htm">Top Hotels</a>
-                <a href="Toursit-Attraction.htm">Top Tourist Attractions</a>
-                <a href="Night-Life.htm">Shanghai Night Life</a>
-                <a href="ContactPage.htm">Contact US</a>
-                <a href="Site-map.htm">Site Map</a>
+    <title>Tourist Attraction-SH</title>
+    <style>
+        p {
+            width: 35%;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: cursive;
+            text-align: justify;
+            font-weight: bold;
+        }
+        h3{
+            font-size: xx-large;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="top.css" type="text/css" />
+
+    <script>
+        function enlargeImg(imageId) {
+            let i = document.getElementById(imageId);
+            let w = i.width;
+            w = w * 1.5;
+
+            i.style.width = w + "px";
+            if (imageId=="first") {
+                document.getElementById("one").style.color = "white";
+            }
+            if (imageId == "second") {
+                document.getElementById("two").style.color = "white";
+            }
+            if (imageId == "third") {
+                document.getElementById("three").style.color = "white";
+            }
+            else{
+                document.getElementById("four").style.color = "white";
         
-            </nav>
-    
+        }
+        }
+        function reduceImg(imageId) {
+            let i = document.getElementById(imageId);
+            let w = i.width;
+            w = w / 1.5;
+            i.style.width = w + "px";
+            if (imageId=="first") {
+                document.getElementById("one").style.color = "black";
+            }
+            if (imageId == "second") {
+                document.getElementById("two").style.color = "black";
+            }
+            if (imageId == "third") {
+                document.getElementById("three").style.color = "black";
+            }
+            else{
+                document.getElementById("four").style.color = "black";
+        
+        }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Top Tourist Attractions In Shanghai</h1>
+    <nav>
+        <a href="index.htm">Home</a>
+        <a href="Dining-Picks.htm">Dining Options</a>
+        <a href="Hotel-Picks.htm">Top Hotels</a>
+        <a href="Toursit-Attraction.htm">Top Tourist Attractions</a>
+        <a href="Night-Life.htm">Shanghai Night Life</a>
+        <a href="ContactPage.htm">Contact US</a>
+        <a href="Site-map.htm">Site Map</a>
+        <a href="Credits-Page.htm">Credits Page</a>
+
+    </nav>
+    <hr>
+    <div>
+        <h3 id="one">The Bund</h3>
+        <img onmouseover="enlargeImg(this.id)" onmouseout="reduceImg(this.id)" id="first" src="bund.jpg" height="450"
+            width="350" alt="bundPic" title="bundPic">
+        <p>
+            The Bund, may be a common sight for people who live in Shanghai, is one of the first places for tourists to
+            visit when entering the city.<br>
+            When visiting the Bund, tourists will be able to see the highest skyscrapers in the city.
+        </p>
+    </div>
+
+    <div>
+        <h3 id="two">Shanghai Disney</h3>
+        <img onmouseover="enlargeImg(this.id)" onmouseout="reduceImg(this.id)" id="second" src="disney.jpg" height="450"
+            width="350" alt="disneyShanghai" title="disneyShanghai">
+        <p>
+            The Shanghai Disney has been attracting Disney lovers from all over the world since 2016.<br>
+            The park has seven themed areas and is located in Pudong, Shanghai.
+        </p>
+    </div>
+
+    <div>
+        <h3 id="three">Oriental Pearl Tower</h3>
+        <img onmouseover="enlargeImg(this.id)" onmouseout="reduceImg(this.id)" id="third" src="tower.jpg" height="450"
+            width="350" alt="pearlTower" title="pearlTower">
+        <p>
+            Shanghai Oriental Pearl Tower is located in Lujiazui, Pudong New Area.<br>
+            The tower is about 468 meters high and is the world's sixth tallest TV tower.<br>
+            Visitors can travel up and down the Oriental Pearl Tower in double-decker elevators that provides
+            introduction of the tower in both English and Chinese.
+        </p>
+    </div>
+
+    <div>
+        <h3 id="four">Tianzifang</h3>
+        <img onmouseover="enlargeImg(this.id)" onmouseout="reduceImg(this.id)" id="fourth" src="tianzifang.jpg"
+            height="350" width="350" alt="tianzifangPic" title="tianzifangPic">
+        <p>
+            Tianzifang is known for trendy art studios, small stores, coffee shops and narrow alleys.<br>
+            It is one of the most popular tourist destination in Shanghai since it is a great place for shopping and
+            taking photos.<br>
+
+        </p>
+    </div>
+
 </body>
+
 </html>

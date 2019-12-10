@@ -3,9 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Shanghai, Travel, Tourist, Night Life">
+    <meta name="description" content="Shanghai Travel Guide-Night Life">
+    <meta name="author" content="Yue Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nightlife-SH</title>
+    <style>
+        
+        p {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight:100;
+            font-family: cursive;
+        }
+        h3{
+            font-size: x-large;
+        }
+    </style>
+    <link rel="stylesheet" href="top.css" type="text/css" />
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script >
+    function changeText(){
+        let i = document.getElementById("new");
+        i.innerHTML = "Shanghai Is The Best!!"
+        i.style.fontsize = "x-large";
+        i.style.color = "white";
+        i.style.fontWeight = "bold";
+        i.style.fontFamily = "cursive";
+        
+    }
+    $(function () {
+          
+          $("#tPic").click(function(){
+              $("#t").css("color","white")
+          })
+
+          $("#xPic").click(function(){
+              $("#x").css("color","white")
+          })
+          $("#mPic").click(function(){
+              $("#m").css("color","white")
+          })
+
+
+
+      });
+    </script>
 </head>
 
 <body>
@@ -18,28 +64,57 @@
         <a href="Night-Life.htm">Shanghai Night Life</a>
         <a href="ContactPage.htm">Contact US</a>
         <a href="Site-map.htm">Site Map</a>
+        <a href="Credits-Page.htm">Credits Page</a>
 
     </nav>
+    <hr>
     <div>
-        <h2>How is Shanghai's nightlife?</h2>
+        <h2 id="new" >How is Shanghai's nightlife?</h2>
         <p>
-            With a huge number of travellers, businesspeople and migrants, it is safe to say Shanghai's nightlife caters
+            With a huge number of travellers, business-people and migrants, it is safe to say Shanghai's nightlife
+            caters
             to a varied crowd. <br>
-            Whether you want to spend your night at a quiet bar or a high-end, crowded club, there are more than enough <br>
+            Whether you want to spend your night at a quiet bar or a high-end, crowded club, there are more than enough
+            <br>
             options to find the right place for you in Shanghai at night. <br>
             So here are some of the most popular bars and clubs in Shanghai...
         </p>
-        <img src="ShanghaiNight.jpg" height="450" width="350" alt="NightView-Shanghai" title="NightView-Shanghai">
+        <img onclick="changeText()" src="ShanghaiNight.jpg" height="450" width="350" alt="NightView-Shanghai" title="NightView-Shanghai">
     </div>
 
     <div>
-        <h3>TAXX, Shanghai</h3>
+        <h3 id="t">TAXX, Shanghai</h3>
         <p>
-            <address>158 Julu Road, Huangpu, Shanghai, China</address><br>
-            TAXX is one of the biggest nightclubs in Shanghai. This place is packed almost every day with EDM lovers. <br>
-            TAXX does not have a fixed theme for what kind of music they are going to play, but it will mostly be EDM and Hip Pop.<br>
+           
+            TAXX is one of the biggest nightclubs in Shanghai. This place is packed almost every day with EDM lovers.
+            <br>
+            TAXX does not have a fixed theme for what kind of music they are going to play, but it will mostly be EDM
+            and Hip Pop.<br>
             The club hosts Top 100 DJ events monthly to attract the crowds.
         </p>
+        <img id="tPic" src="taxx.gif" height="450" width="350" alt="taxxPic" title="taxxPic">
+    </div>
+
+    <div>
+        <h3 id="x">Xintiandi Street</h3>
+        <p>
+            This 500-meter-long road in Xintiandi is one of the best places for people to spend their night life in
+            Shanghai. <br>
+            Both tourists and residents can shop, watch performances, take photos or dine out during the operation
+            times.<br>
+            The area is composed of old-style Shijumen residences and modern architecture,<br> which provides you the
+            taste of both Shanghai in the 1920s and the modern lifestyle of urbanites of the 21st century.
+        </p>
+        <img id="xPic" src="xintiandi.jpg" height="450" width="350" alt="xintiandi-Pic" title="xintiandi-Pic">
+    </div>
+
+    <div>
+        <h3 id="m">The Monkey Lounge</h3>
+        <p>
+            This venue is known for hip hop, which makes it unique from all the other mega clubs.<br>
+            The venue serves a wide array of champagnes and whiskies, which highly attracts international tourists.
+        </p>
+        <img id="mPic" src="monkey.jpg" height="380" width="350" alt="monkeyShanghai" title="monkeyShanghai">
     </div>
 
 </body>

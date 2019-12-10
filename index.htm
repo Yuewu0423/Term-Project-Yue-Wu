@@ -3,14 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Shanghai, Travel, Tourist">
+    <meta name="description" content="Shanghai Travel Guide">
+    <meta name="author" content="Yue Wu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home-Page</title>
+    <style>
+        p{
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: cursive;
+            text-align: justify;
+        }
+
+        iframe {
+            margin-right: auto;
+            margin-left: auto;
+            border: 4px solid gray;
+        }
+
+
+
+
+    </style>
+     <link rel="stylesheet" href="top.css" type="text/css" />
+    
+<script>
+    const slides = ["Shanghai.jpg", "shanghai1.jpg", "shanghai2.jpg", "shanghai3.jpg"];
+    let i = 0;
+
+    function slideShow() {
+        let shImg = document.getElementById("shanghaiImg");
+        if (i == slides.length) {
+            i = 0;
+        }
+        shImg.src = slides[i];
+        i = i+1;
+        setTimeout("slideShow()", 1000);
+    }
+    
+    function changeStyle(){
+        let x = document.getElementById("name");
+        x.style.color = "red";
+        x.style.fontSize = "x-large";
+        x.style.fontWeight = "bold";
+        x.style.fontFamily = "italic";
+    }
+</script>
 </head>
 
-<body>
+<body onload="slideShow()">
+    <div>
     <h1>Welcome To Shanghai-Shanghai Travel Guide</h1>
-  
+
     <audio controls="controls">
         <source src="Forgotten Shanghai Classic Part 1 被遗忘的上海经典歌曲.mp3" type="audio/mp3">
     </audio>
@@ -23,21 +70,24 @@
         <a href="Night-Life.htm">Shanghai Night Life</a>
         <a href="ContactPage.htm">Contact US</a>
         <a href="Site-map.htm">Site Map</a>
+        <a href="Credits-Page.htm">Credits Page</a>
 
     </nav>
+    </div>
     <hr>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-F8WA8Ir9WE" frameborder="1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-F8WA8Ir9WE" frameborder="1"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <p>
-        Shanghai, known as the "Oriental Paris", is the largest and the most developed metropolis in Mainland China.
+        Shanghai, known as the <span id="name">"Oriental Paris"</span>, is the largest and the most developed metropolis in Mainland China.
         It is one of China's greatest economic and cultural centers and you will never get bored in this dynamic
         metropolis.
         If you are first time travelling to Shanghai, you are at the right place!
     </p>
     <hr>
-
-    <img src="Shanghai.jpg" height=350 width=300 title="Shanghai" alt="A picture of Shanghai...">
-
+    
+    <img onclick="changeStyle()" id="shanghaiImg" src="Shanghai.jpg" height=350 width=300 title="Shanghai" alt="Slide show of Shanghai">
+  
 
 
 
